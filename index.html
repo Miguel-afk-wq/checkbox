@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Segurança para Windows</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1> Checklist de Segurança para Windows</h1>
+        <p class="description">Marque cada item para garantir a máxima proteção do seu sistema operacional.</p>
+        
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+            <span id="progress-text">0% Seguro</span>
+        </div>
+        <ul id="task-list">
+            
+            <li class="section-title">Proteção Ativa (Software e Sistema)</li>
+            <li class="task-item">
+                <input type="checkbox" id="seg_update">
+                <label for="seg_update">Instalar todas as **Atualizações** do Windows (críticas de segurança).</label>
+                <button class="delete-button">X</button>
+            </li>
+            <li class="task-item">
+                <input type="checkbox" id="seg_defender">
+                <label for="seg_defender">Verificar se o **Microsoft Defender** (Antivírus) está ativo.</label>
+                <button class="delete-button">X</button>
+            </li>
+            <li class="task-item">
+                <input type="checkbox" id="seg_firewall">
+                <label for="seg_firewall">Garantir que o **Firewall do Windows** está ativo para todas as redes.</label>
+                <button class="delete-button">X</button>
+            </li>
+            <li class="task-item">
+                <input type="checkbox" id="seg_uac">
+                <label for="seg_uac">Manter o **Controle de Conta de Usuário (UAC)** no nível padrão ou mais alto.</label>
+                <button class="delete-button">X</button>
+            </li>
+            
+            <li class="section-title">Gerenciamento de Acesso e Contas</li>
+            <li class="task-item">
+                <input type="checkbox" id="seg_password">
+                <label for="seg_password">Usar **Senha Forte** e configurar um PIN ou Windows Hello.</label>
+                <button class="delete-button">X</button>
+            </li>
+            <li class="task-item">
+                <input type="checkbox" id="seg_dynamic_lock">
+                <label for="seg_dynamic_lock">Ativar o **Bloqueio Dinâmico** para bloquear automaticamente ao se afastar.</label>
+                <button class="delete-button">X</button>
+            </li>
+            <li class="task-item">
+                <input type="checkbox" id="seg_admin_account">
+                <label for="seg_admin_account">Usar **Conta de Usuário Padrão** no dia a dia (evitar Admin constante).</label>
+                <button class="delete-button">X</button>
+            </li>
+
+            <li class="section-title">Criptografia e Proteção de Dados</li>
+            <li class="task-item">
+                <input type="checkbox" id="seg_bitlocker">
+                <label for="seg_bitlocker">Ativar **Criptografia de Dispositivo** (BitLocker) para proteger dados em caso de perda.</label>
+                <button class="delete-button">X</button>
+            </li>
+            <li class="task-item">
+                <input type="checkbox" id="seg_controlled_access">
+                <label for="seg_controlled_access">Habilitar **Acesso Controlado a Pastas** (Proteção contra Ransomware).</label>
+                <button class="delete-button">X</button>
+            </li>
+            <li class="task-item">
+                <input type="checkbox" id="seg_2fa">
+                <label for="seg_2fa">Ativar **Autenticação de Dois Fatores (2FA)** em suas contas online críticas.</label>
+                <button class="delete-button">X</button>
+            </li>
+        </ul>
+        
+        <p class="footer-note">Sistemas seguros dependem de manutenção contínua!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
